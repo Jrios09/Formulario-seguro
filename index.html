@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Proyecto - Agencia Cristal</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="container">
+    <div class="left-side">
+      <div class="logo">
+        <div class="logo-container">
+          <div class="logo-icon">
+            &lt;/&gt;
+          </div>
+          <div class="logo-text">
+            <div class="agency">AGENCIA</div>
+            <div class="name">CRISTAL</div>
+            <div class="subtitle">FÁBRICA DE SOFTWARE</div>
+          </div>
+        </div>
+      </div>
+      
+      <h1 class="main-title">Cuéntanos sobre tu proyecto</h1>
+      <h2 class="subtitle">Transformamos tu idea en software innovador y de alto impacto</h2>
+      <p class="description">
+        Una vez enviado, nuestro líder de proyectos recibirá una notificación con tu propuesta para evaluarla y darte una respuesta ágil
+      </p>
+    </div>
+
+    <div class="right-side">
+      <h2 class="form-title">Registrar Proyecto</h2>
+      
+      <form>
+        <div class="form-group">
+          <label>
+            <i class="fas fa-lightbulb"></i>
+            Nombre del proyecto
+          </label>
+          <input type="text" name="proyecto_nombre" placeholder="Ingresa el nombre de tu proyecto">
+        </div>
+
+        <div class="form-group">
+          <label>
+            <i class="fas fa-calendar-alt"></i>
+            Plazo estimado (Ej: 3 meses)
+          </label>
+          <input type="text" name="plazo" placeholder="Ej: 3 meses">
+        </div>
+
+        <div class="form-group">
+          <label>
+            <i class="fas fa-align-left"></i>
+            Descripción del proyecto
+          </label>
+          <textarea name="descripcion" placeholder="Describe tu proyecto en detalle..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <i class="fas fa-dollar-sign"></i>
+            Presupuesto estimado ($)
+          </label>
+          <input type="number" name="presupuesto" placeholder="Ingresa tu presupuesto estimado">
+        </div>
+
+        <div class="form-group">
+          <label>
+            <i class="fas fa-layer-group"></i>
+            Categoría del proyecto
+          </label>
+          <div class="checkbox-grid">
+            <div class="checkbox-item">
+              <input type="checkbox" id="web" name="categoria[]" value="web">
+              <label for="web" class="checkbox-content">
+                <i class="fas fa-globe"></i>
+                Web
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="moviles" name="categoria[]" value="moviles">
+              <label for="moviles" class="checkbox-content">
+                <i class="fas fa-mobile-alt"></i>
+                Móviles
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="ia" name="categoria[]" value="ia">
+              <label for="ia" class="checkbox-content">
+                <i class="fas fa-brain"></i>
+                IA
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="escritorio" name="categoria[]" value="escritorio">
+              <label for="escritorio" class="checkbox-content">
+                <i class="fas fa-desktop"></i>
+                Escritorio
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <i class="fas fa-user"></i>
+            Su nombre
+          </label>
+          <input type="text" name="nombre" placeholder="Ingresa tu nombre completo">
+        </div>
+
+        <div class="form-group">
+          <label>
+            <i class="fab fa-whatsapp"></i>
+            Su Whatsapp
+          </label>
+          <input type="tel" name="whatsapp" placeholder="+57 300 123 4567">
+        </div>
+
+        <div class="form-group">
+          <label>
+            <i class="fas fa-envelope"></i>
+            Su Correo
+          </label>
+          <input type="email" name="correo" placeholder="tu@email.com">
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i>
+          Enviar Proyecto
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="recaptcha-info">
+    Protegido por reCAPTCHA<br>
+    Privacidad - Términos
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
